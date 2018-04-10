@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry    location="C:/Users/fengbin/.m2/repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar"/>
+  <context id="context1" targetRuntime="MyBatis3">
+  	<commentGenerator>  
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->  
+            <property name="suppressAllComments" value="false" />  
+    </commentGenerator> 
+  
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/promotion" password="111111" userId="root" />
+    <javaModelGenerator targetPackage="com.promotion.pojo" targetProject="MybatisGenerator/src" />
+    <sqlMapGenerator targetPackage="com.promotion.mapping" targetProject="MybatisGenerator/src" />
+    <javaClientGenerator targetPackage="com.promotion.dao" targetProject="MybatisGenerator/src" type="XMLMAPPER" />
+    <table  tableName="t_smzdm_jr" domainObjectName="SmzdmJr">
+    </table>
+  </context>
+</generatorConfiguration>
